@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BandCreator </title>
+
+    <link rel="shortcut icon" href="Cc_logo-02.png" type="image/x-icon">
+
+   <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  
+    <script src="script.js"></script>
+     
+</head> 
+
+
+<body>
+	<div class="container">
+    	<div class="wrapper">
+        	<h1> Create your own Band </h1>
+        	<h2> This website has been created to allow you to create the unique band and album title you have dreamed of for so long. 
+        	<br>
+        You only have to fill in the given forms and the generator will work its magic to fill out the information on the album cover. </h2>
+        	<form action="">
+                <label for="generate"> Generate here </label>
+                <br>
+                <input type="text" id="myText" placeholder="Type in something..."> 
+        	</form>
+         	<button onclick="myFunction()"> Generate </button>
+            
+            
+          <div class="pictureselect">
+        		<label> Choose a picture </label>
+            	
+            <div class="pics">
+            	  <img onclick="imageChange('artworks1.jpg')" class="chooseimg" src="artworks1.jpg" alt="img">
+            
+            	  <img onclick="imageChange('artworks2.jpg')" class="chooseimg" src="artworks2.jpg" alt="img">
+                
+                <img onclick="imageChange('artworks3.jpg')" class="chooseimg" src="artworks3.jpg" alt="img">
+                
+                <img onclick="imageChange('artworks4.jpg')" class="chooseimg" src="artworks4.jpg" alt="img">
+                
+                <img onclick="imageChange('artworks5.jpg')" class="chooseimg" src="artworks5.jpg" alt="img">
+                
+                <img onclick="imageChange('artworks6.jpg')" class="chooseimg" src="artworks6.jpg" alt="img">
+            </div>
+                
+                <section class="descriptions">
+                
+                	<div class="info">
+                	    <div class="infoi">
+                        <h5 class="band-name"> i </h5>
+                        <div class="test"> az input első és utolsó betű magánhangzó-e </div>
+                    </div>                    
+                    <h4>Band name generator algorithm</h4>
+                </div>
+
+                	<div class="info">
+                	    <div class="infoi">
+                        <h5 class="album-name"> i </h5>
+                        <div class="test"> a bandname tartalmazza e a The szót </div>
+                    </div>                    
+                    <h4>Album title generator algorithm</h4>
+                    </div>
+                    
+                	<div class="info">
+                	    <div class="infoi">
+                        <h5 class="album-name"> i </h5>
+                        <div class="test"> megnézi, hogy egy random megadott betűje az album névnek melyik részén van az abc-nek </div>
+                    </div>                    
+                    <h4> Description generator algorithm </h4>
+                    </div>
+                    
+                	<div class="info">
+                	    <div class="infoi">
+                        <h5 class="album-name"> i </h5>
+                            <div class="test"> <p>megnézi, hogy a 4. és a hátolról a 4. betűje az albumnévnek hányszor szerepel, majd elemzi, az albumnév hosszát is és az alapján adja meg az évszámot</p>
+                        
+                            </div>
+                        </div>                    
+                        <h4> Year generator algorithm </h4>
+                    </div>
+
+                    
+
+                </section>
+        	</div>
+    	</div>
+    
+    </div>
+	<div class="card-container">
+    <div class="card">
+        <div class="front">
+    	    <img id="bannerImage" src="artworks3.jpg" alt="photo">
+            <div class="text">
+                <h6 id="demo"> Band Name </h6>
+                <hr class="line">
+                <h6 id="album"> Album title </h6>
+            
+            </div>
+            <div class="year">
+                <h6 id="rotate"> Year </h6>
+            </div>
+        </div>
+
+        <div class="back">
+            
+            <img id="bannerImageBack" src="artworks3.jpg" alt="photo">
+            <div class="opacity"></div>
+            <p id="back-description"  class="description-back"> Description </p>
+        </div>
+        
+        
+    </div>
+    </div>
+ 
+       
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document </title>
+
+    <link rel="shortcut icon" href="Cc_logo-02.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="leftside">
+        <h1> Create your own Band </h1>
+        <h2> This website has been created to allow you to create the unique band and album title you have dreamed of for so long. 
+        <br>
+        You only have to fill in the given forms and the generator will work its magic to fill out the information on the album cover. </h2>
+        <form action="">
+                <label for="generate"> Generate here </label>
+                <br>
+                <input type="text" id="frame"> 
+        </form>
+         <button> Generate </button>
+    </div>
+
+    <img src="artworks1.jpg" alt="artwork1">
+</body>
+</html> -->
